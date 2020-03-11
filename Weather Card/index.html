@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .content_Date {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+
+            padding: 150px;
+
+        }
+
+        .card {
+            width: 200px;
+            background-color: aliceblue;
+            border: 3px solid black;
+            margin-right: 20px;
+
+        }
+
+        .card-img {
+            width: 100%;
+        }
+
+        .card-img img {
+            width: 100%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="content_Date">
+        <div class="current_Date"></div>
+        <!-- <div class="card">
+            <div class="card-img"><img src="img/cover1.jpg" alt=""></div>
+            <div class="card-content">
+                <h1>台中市</h1>
+                <h2>多雲時晴</h2>
+                <div>
+                    <span>最高溫:20C</span>
+                    <span>最低溫:10C</span>
+                </div>
+                <div>微冷,須穿外套禦寒</div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="img/cover1.jpg" alt=""></div>
+            <div class="card-content">
+                <h1>台中市</h1>
+                <h2>多雲時晴</h2>
+                <div>
+                    <span>最高溫:20C</span>
+                    <span>最低溫:10C</span>
+                </div>
+                <div>微冷,須穿外套禦寒</div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-img"><img src="img/cover1.jpg" alt=""></div>
+            <div class="card-content">
+                <h1>台中市</h1>
+                <h2>多雲時晴</h2>
+                <div>
+                    <span>最高溫:20C</span>
+                    <span>最低溫:10C</span>
+                </div>
+                <div>微冷,須穿外套禦寒</div>
+            </div>
+
+        </div> -->
+    </div>
+    <script>
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-08FCE9E3-533E-4C14-9307-B35C9559ED27')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (weather_array) {
+
+            var weather = weather_array.records.location
+            // console.log(weather)
+            weather.forEach(current_Date => { //forEach針對陣列使用 物件無法使用
+
+                // console.log(current_Date)
+                var locations = current_Date.locationName
+
+                var Wx = current_Date.weatherElement[0].time[0].parameter.parameterName
+
+                var MaxT = current_Date.weatherElement[4].time[0].parameter.parameterName
+
+                var MinT = current_Date.weatherElement[2].time[0].parameter.parameterName
+
+                var CI = current_Date.weatherElement[3].time[2].parameter.parameterName
+
+
+                var Wx_code = current_Date.weatherElement[0].time[0].parameter.parameterValue
+
+                console.log(Wx_code);
+
+                    
+                if(Wx_code == "1"){
+                    var weather_icon = 'img/cover1.jpg'
+                    }
+                else if(Wx_code =='2' || Wx_code =='3' || Wx_code =='4'|| Wx_code =='5'|| Wx_code =='6'  ){
+                    var weather_icon = 'img/cover4.jpg'
+                }
+                else if(Wx_code =='7'){
+                    var weather_icon = 'img/cover2.jpg'
+                }
+                else if(Wx_code =='11'){
+                    var weather_icon = 'img/cover3.jpg'
+                }
+                var cards = document.querySelector('.content_Date')
+
+                cards.innerHTML += `
+                <div class="card">
+                <div class="card-img"><img src="${weather_icon}" alt=""></div>
+                <div class="card-content">
+                    <h1>${locations}</h1>
+                    <h2>${Wx}</h2>
+                    <div>
+                        <span>${MaxT}C</span>
+                        <span>${MinT}C</span>
+                    </div>
+                    <div>${CI}</div>
+                </div>
+
+                </div>`
+
+                
+            })
+        });
+
+        var today = new Date();
+
+        var current_day = today.getFullYear() + '年' + (today.getMonth() + 1) + '月';
+
+        var current_time = today.getHours() + ':' + today.getMinutes();
+
+        var time = document.querySelector('.current_Date');
+            time.innerHTML += '現在時間:'+current_day + current_time;
+
+
+
+            // if(Wx_code == "1"){
+            //     var weather_icon = 'img/cover1.jpg'
+            //     }
+            // else if(Wx_code =='2' || Wx_code =='3' || Wx_code =='4' ){
+            //     var weather_icon = 'img/cover2.jpg'
+            // }
+
+
+
+
+
+
+
+    // var wheathers = [{
+    //     wheather_img:"img/cover1.jpg",
+    //     city:"台中市",
+    //     weather:"多雲時晴",
+    //     hight:"最高溫:20C",
+    //     low:"最低溫:10C",
+    //     Comfortable :"微冷,須穿外套禦寒",
+
+    // },
+    // {
+    //     city:"縣市名稱",
+    //     weather:"天氣",
+    //     hight:"最高溫",
+    //     low:"最低溫",
+    //     Comfortable :"天氣舒適度",
+
+    // },
+    // {
+    //     city:"縣市名稱",
+    //     weather:"天氣",
+    //     hight:"最高溫",
+    //     low:"最低溫",
+    //     Comfortable :"天氣舒適度",
+
+    // },
+    // {
+    //     city:"縣市名稱",
+    //     weather:"天氣",
+    //     hight:"最高溫",
+    //     low:"最低溫",
+    //     Comfortable :"天氣舒適度",
+
+    // },
+
+    // ]
+
+    // var cards = document.querySelector('.container');
+
+    </script>
+</body>
+
+</html>
