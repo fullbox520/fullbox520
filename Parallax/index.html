@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+body{
+    margin: 0;
+}
+/* a{
+    background-color: red;
+} */
+a:visited{
+    color: gray;
+}
+/* .menu-btn:hover{
+    background-color: white;
+} */
+a:hover .menu-btn{
+    color: yellow ;
+    background-color: violet;
+}
+a:active .menu-btn{
+    color: blueviolet;
+    background-color: rgb(7, 4, 211);
+}
+    .all{
+        background-color: aqua;
+        width: 80%;
+        height: 300vh;
+        margin: 0 auto;
+    }
+    #section-1{
+        background-image: url(img/kb.jpg); 
+    }
+    #section-2{
+        background-image: url(img/curry.jpg);           
+    }
+    #section-3{
+       background-image: url(img/jordan.jpg);        
+    }
+    .section-style{
+        width: 100%;
+        height: 50vh;
+        padding-top: 50vh;
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed;
+
+    }
+    .mask{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: calc(25vh + 40px);
+        padding-top:calc( 25vh - 40px);
+    }
+    .btn{
+        width: 300px;
+        height: 80px;
+        background-color: red;
+        margin: 0 auto;
+        transition: 1s;
+    }
+    #navbar{
+        width: calc(80% - 30px);
+        padding: 10px 15px;
+        position: fixed;
+        /* left: 10%; */
+    }
+    #logo{
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+        float: left;
+        background-image: url("img/skyman.png");
+        background-size: cover;
+        background-position: center; 
+        
+    }
+    .menu{
+       /* background-color: tomato; */
+       /* width: 500px; */
+       height: 50px;
+       float: right;
+
+    }
+    .menu-btn{
+        background-color: greenyellow;
+        /* width: 80px; */
+        height: 50px;
+        float: left;
+        margin-left: 10px;
+        /* padding: (0 10px); */
+        line-height: 50px;
+        transition: 1s;
+    }
+    .btn:hover{
+        background-color: yellow;
+        
+    }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div id="navbar">
+        <div id="logo"></div>
+        <div class="menu">
+            <a href="#section-1">
+                <div class="menu-btn">按鈕A</div>
+            </a>
+            <a href="#section-2">
+                <div class="menu-btn">按鈕B</div>
+            </a>
+            <a href="#section-3">
+            <div class="menu-btn">按鈕C</div>
+            </a>
+        </div>
+    </div>
+    <div id="section-1" class="section-style">
+        <div class="mask">
+            <div class="btn"></div>           
+        </div>
+    </div>
+    <div id="section-2" class="section-style">
+        <div class="mask">
+            <div class="btn"></div>           
+        </div>
+    </div>
+    <div id="section-3" class="section-style">
+        <div class="mask">
+            <div class="btn"></div>           
+        </div>
+    </div>
+</div>
+</body>
+</html>

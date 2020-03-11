@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: cadetblue;
+    }
+    #all{
+        /* background-color: aliceblue; */
+        width: 1024px;
+        height: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        padding:calc(50vh - 250px) 0 0 0;
+    }
+    #boxA{
+        /* background-color: brown; */
+        background-image: url(img/kobe.jpg);
+        width: 335px;
+        height: 500px;
+        margin:0 10px 0 0;
+    }
+    #boxB{
+        /* background-color: brown; */
+         width: 334px;
+         height: 500px;
+         background-image: url(img/curry.jpg);
+         margin:0 10px 0 0;
+          }
+    #boxC{
+        /* background-color: brown; */
+        background-image: url(img/star.jpg);
+        width: 335px;
+        height: 500px;
+
+        }
+        
+    .box{
+        float: left;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+               
+    }
+    .cover:hover{
+        background-color: rgba(0,0, 0, 0);
+    }
+    .cover { background-color: brown;
+            width: 100%;
+            height: 100%;
+            float: left;
+            transition: 0.5s;
+        } 
+    @media (max-width:1023px) {
+            #all{
+            width: 738px;
+            height: 994px;
+            padding:calc(50vh - 497px) 0 0 0;
+                }
+            #boxA{
+            width: 100%;
+            height: calc(50% - 5px);
+            margin:0  0 10px 0;
+            }
+            #boxB{
+            width: calc(50% - 5px);
+            height: calc(50% - 5px);
+            }
+            #boxC{
+            width: calc(50% - 5px);
+            height: calc(50% - 5px);
+            }
+    @media (max-width :767px) {
+            #all{
+            width: 100%;
+            height: 150vh;
+            padding: unset;   
+            }
+            #boxA{
+            width: 100%;
+            height: 50vh;
+            margin:unset;   
+            }
+            #boxB{
+            width: 100%;
+            height: 50vh;
+            }
+            #boxC{
+            width: 100%;
+            height: 50vh;
+            }
+            }    
+        } 
+
+</style>
+
+<body>
+    <div id="all">
+        <div id=boxA class="box">
+            <div id="coverA" class="cover"></div id="coverA"    >
+        </div>
+        <div id=boxB class="box">
+            <div id="coverB" class="cover"></div>
+        </div>
+        <div id=boxC class="box">
+            <div id="coverC" class="cover"></div>
+        </div>
+    </div>
+</body>
+</html>

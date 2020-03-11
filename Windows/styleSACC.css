@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+}
+
+.all {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all #navbar {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all #navbar a {
+  list-style: none;
+}
+
+.all #navbar #logo {
+  margin: 16px 16px 16px 0;
+}
+
+.all #navbar .menuL {
+  margin-right: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all #navbar .menuL .menuLfont {
+  margin-right: 20px;
+}
+
+.all #navbar .menuR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  margin-right: 40px;
+}
+
+.all #navbar .menuR .menuRfont {
+  margin-left: 20px;
+}
+
+.all #navbar .menuR #searchicon img {
+  width: 20px;
+  height: 20px;
+}
+
+.all #navbar .menuR #shooppingcarticon img {
+  width: 20px;
+  height: 20px;
+}
+
+.all #navbar .menuR #singinicon img {
+  width: 20x;
+  height: 20px;
+}
+
+@media (max-width: 1399px) {
+  .all #navbar .menuR #menuR_search {
+    display: none;
+  }
+}
+
+@media (max-width: 1399px) {
+  .all #navbar .menuR #menuR_shooppingcart {
+    display: none;
+  }
+}
+
+@media (max-width: 1399px) {
+  .all #navbar .menuR #menuR_shooppingcart #menuR_singin {
+    display: none;
+  }
+}
+
+.all .bannerouterboxtop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.all .bannerouterboxtop #top {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+@media (max-width: 1083px) {
+  .all .bannerouterboxtop #top {
+    width: 100%;
+  }
+}
+
+.all .bannerouterboxtop #top img {
+  width: 100%;
+}
+
+.all .bannerouterboxtop #top .bannerfonttop_bottom {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.all .bannerouterboxtop #top .bannerfonttop_bottom .bannerfonttop {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  padding: 50px;
+}
+
+.all .bannerouterboxtop #top .bannerfonttop_bottom .bannerfonttop_top {
+  padding: 15px 0;
+  font-size: 40px;
+}
+
+.all .bannerouterboxtop #top .bannerfonttop_bottom .bannerfonttop_mid {
+  padding: 15px 0;
+}
+
+.all .bannerouterboxtop #top .bannerfonttop_bottom:hover {
+  text-decoration: underline;
+}
+
+.all #mid-top {
+  width: 90%;
+  background-color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.all #mid-top #big-box {
+  width: 100%;
+}
+
+.all #mid-top #big-box #boxA {
+  width: 25%;
+}
+
+@media (max-width: 1083px) {
+  .all #mid-top #big-box #boxA {
+    margin-right: 24px;
+    width: 50%;
+  }
+}
+
+.all #mid-top #big-box #boxA img {
+  width: 100%;
+}
+
+.all #mid-top #big-box #boxB {
+  width: 25%;
+}
+
+@media (max-width: 1083px) {
+  .all #mid-top #big-box #boxB {
+    margin-right: 24px;
+    width: 50%;
+  }
+}
+
+.all #mid-top #big-box #boxB #image-B {
+  padding: 0 12px;
+}
+
+.all #mid-top #big-box #boxC {
+  width: 25%;
+}
+
+@media (max-width: 1083px) {
+  .all #mid-top #big-box #boxC {
+    margin-right: 24px;
+    width: 50%;
+  }
+}
+
+.all #mid-top #big-box #boxC #image-C {
+  padding: 0 12px;
+}
+
+.all #mid-top #big-box #boxD {
+  width: 25%;
+}
+
+@media (max-width: 1083px) {
+  .all #mid-top #big-box #boxD {
+    margin-right: 24px;
+    width: 50%;
+  }
+}
+
+.all #mid-top #big-box #boxD #image-D {
+  padding: 0 12px;
+}
+
+.all #mid-top .text {
+  padding-left: 12px;
+}
+
+.all #mid-top .title-style {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all #mid-top .font-family {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all #mid-top .flex-wrap {
+  word-wrap: break-word;
+}
+
+.all #mid-top .field {
+  width: 19vw;
+}
+
+.all #mid-top .button {
+  margin-top: 20px;
+  color: #0067b8;
+}
+
+.all #bannerouterboxbtm {
+  width: 100%;
+}
+
+.all #bannerouterboxbtm #mid-btm {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.all #bannerouterboxbtm #mid-btm img {
+  width: 100%;
+  margin: auto;
+}
+
+.all #bannerouterboxbtm .bannerfontbtm {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  padding: 50px;
+}
+
+.all #bannerouterboxbtm .bannerfontbtm .bannerfontbtm_top {
+  padding: 15px 0;
+  font-size: 40px;
+}
+
+.all #bannerouterboxbtm .bannerfontbtm .bannerfontbtm_mid {
+  padding: 15px 0;
+}
+
+.all #bannerouterboxbtm .bannerfontbtm .bannerfontbtm_bottom {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.all #bannerouterboxbtm .bannerfontbtm_bottom:hover {
+  text-decoration: underline;
+}
+
+.all .space {
+  width: 90%;
+  padding: 50px 0 0 0;
+  font-size: 22px;
+}
+
+.all #content {
+  width: 100%;
+  background-color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.all #content #btmbig-box {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all #content #btmbig-box #btmboxA {
+  width: 25%;
+}
+
+.all #content #btmbig-box #btmboxA img {
+  width: 100%;
+}
+
+.all #content #btmbig-box #btmboxB {
+  width: 25%;
+}
+
+.all #content #btmbig-box #btmboxB img {
+  width: 100%;
+}
+
+.all #content #btmbig-box #btmboxC {
+  width: 25%;
+}
+
+.all #content #btmbig-box #btmboxC img {
+  width: 100%;
+}
+
+.all #content #btmbig-box #btmboxD {
+  width: 25%;
+}
+
+.all #content #btmbig-box #btmboxD img {
+  width: 100%;
+}
+
+.all .linkspace {
+  width: 90%;
+  padding: 50px 0 0 0;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .linkspace .linkspacefont {
+  padding: 0 10px;
+}
+
+.all .linkspace .fb {
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+}
+
+.all .linkspace .youtube {
+  width: 28px;
+  height: 28px;
+}
+
+.all .footer {
+  width: 100%;
+  /* height: 395px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: lightgrey;
+}
+
+.all .footer .li {
+  margin: 0 20px 0 0;
+  list-style: none;
+}
+
+.all .footer li {
+  list-style: none;
+}
+
+.all .footer .ul-ph ul {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.all .footer .ul-ph ul li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=styleSACC.css.map */
