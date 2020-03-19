@@ -1,0 +1,453 @@
+@charset "UTF-8";
+html body {
+  font-family: 'Noto Serif JP', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'Sawarabi Mincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  margin: 0;
+  position: relative;
+}
+
+.page-top {
+  width: 100%;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #282828;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
+
+.page-top .site-heade {
+  width: 100%;
+  height: 142px;
+}
+
+.page-top .site-heade .header-top {
+  width: 100%;
+  height: 142px;
+  padding: 15px 0;
+  background-position: center;
+  background-image: url(./img/header-bg.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-top .site-heade .header-top .container {
+  width: 112px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .site-heade .header-bottom {
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .site-heade .header-bottom .container {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-top .site-heade .header-bottom .container .site-nav {
+  width: 90%;
+  height: 100%;
+  padding: 6px 0;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  margin: auto;
+  position: relative;
+}
+
+.page-top .site-heade .header-bottom .container .site-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page-top .site-heade .header-bottom .container .site-nav ul li {
+  position: relative;
+  width: calc(100% / 6);
+  text-align: center;
+}
+
+.page-top .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.page-top .swiper-container .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.page-top .page-news {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  background-color: #e6e6e6;
+  padding: 50px;
+  position: relative;
+}
+
+.page-top .page-news .news-content {
+  width: 80%;
+  height: 70%;
+}
+
+.page-top .page-news .news-content .news-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page-top .page-news .news-content .news-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-top .page-news .news-content .news-container .news-card {
+  width: 22%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-top .page-news .news-content .news-container .news-card .new-cardImg {
+  width: 100%;
+  height: 94px;
+  margin-bottom: 60px;
+}
+
+.page-top .page-news .news-content .news-container .news-card .new-cardTitle {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.page-top .page-news .news-content .news-container .news-card .news-cardUpdatetime {
+  color: #646464;
+  font-size: 12px;
+}
+
+.page-top .page-news .news-content .news-footer {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  text-align: inherit;
+  font-weight: 400;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  color: #fff;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .page-news .news-content .news-footer:hover {
+  opacity: 0.5;
+  text-decoration: none !important;
+  outline: none;
+}
+
+.page-top .page-about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.page-top .page-about .about-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-top .page-product {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6e6e6;
+}
+
+.page-top .page-product .product-content {
+  width: 80%;
+  width: 80%;
+}
+
+.page-top .page-product .product-content .product-main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.page-top .page-product .product-content .product-main .product-title {
+  margin: 50px 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page-top .page-product .product-content .product-main .product-card {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-top .page-product .product-content .product-main .product-card .product-img {
+  width: 50%;
+}
+
+.page-top .page-product .product-content .product-main .product-card .product-img .img {
+  width: 700px;
+}
+
+.page-top .page-product .product-content .product-main .product-card .product-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-top .page-chef {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.page-top .page-chef .chef-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-top .page-chef .chef-content .chef-title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+.page-top .page-chef .chef-content .chef-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .page-chef .chef-content .chef-img {
+  width: 50%;
+}
+
+.page-top .page-movie {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6e6e6;
+}
+
+.page-top .page-movie .movie-content {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.page-top .page-movie .movie-content .movie-title {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+.page-top .page-movie .movie-content .movie-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .page-access {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-top .page-access .access-content {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.page-top .page-access .access-content .access-cardTitle {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+.page-top .page-access .access-content .access-card {
+  width: 40%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-top .page-access .access-content .access-card .access-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

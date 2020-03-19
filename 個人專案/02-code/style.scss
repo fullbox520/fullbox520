@@ -1,0 +1,384 @@
+html body {
+    font-family: 'Noto Serif JP', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'Sawarabi Mincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+    margin: 0;
+    position: relative;
+   
+}
+.page-top{
+    width: 100%;
+    // height: 300vh;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #282828;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    background-color: white;
+    // display: flex;
+
+    .site-heade{
+        width: 100%;
+        height: 142px;
+        // background-color: #282828;
+
+        .header-top{
+            width: 100%;
+            height: 142px;
+            padding: 15px 0;
+            background-position: center;
+            // background-repeat: no-repeat;
+            background-image: url(./img/header-bg.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+
+            .container{
+                width: 112px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .site-logo-wrapper{
+
+                }
+            }
+        }
+        
+        .header-bottom{
+            // width: 100%;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            .container{
+                width: 80%;
+                height: 100%;
+                display: flex;
+                // justify-content: space-around;
+                
+
+                .site-nav{
+                    width: 90%;
+                    height: 100%;
+                    // display: block;
+                    padding: 6px 0;
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-decoration: none;
+                    margin: auto;
+                    position: relative;
+                    
+                    // ::after{
+                    //     position: absolute;
+                    //     top: 4px;
+                    //     right: -3px;
+                    //     content: '|';
+                    // }
+                    
+
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        justify-content: space-around;
+                        align-items: flex-end;
+                        li{
+                            position: relative;
+                            width: calc(100% / 6);
+                            text-align: center;
+                        
+                            .nav-item{
+                                
+                            }
+                        }
+                       
+                    }
+                     
+                    
+                  
+                    
+                }
+            }
+        }
+    }
+   
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                margin-top:100px;
+              
+                .swiper-wrapper{
+                    // width: 600px;
+                    // height: 475px;
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                  
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        
+                        // img{
+                        //         max-width:60%;
+                        //         max-height: 60%;
+                        // }
+                  }
+                }
+            }
+            .page-news{
+                width: 100%;
+                // height: 450px;
+                display: flex;
+                justify-content: center;
+                align-items: center;              
+                margin-top: 100px;
+                background-color: #e6e6e6;
+                padding: 50px;
+                position: relative;
+                .news-content{
+                    width: 80%;
+                    height: 70%;
+                    
+
+                  
+                    .news-title{
+                        font-size: 20px;
+                        // text-align: inherit;
+                        font-weight: 400;
+                    }
+                    .news-container{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        
+                        .news-card{
+                            width: 22%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                            .new-cardImg{
+                                width: 100%;
+                                height: 94px;
+                                margin-bottom:60px;
+                            }
+                            .new-cardTitle{
+                                margin-bottom: 5px;
+                                font-weight: bold;
+                                font-size: 12px;
+                                margin-bottom: 5px;
+                            }
+                            .news-cardUpdatetime{
+                                color: #646464;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                        .news-footer{
+                            width: 50px;
+                            height: 30px;
+                            font-size: 20px;
+                            text-align: inherit;
+                            font-weight: 400;
+                            position: absolute;
+                            right: 10%;
+                            bottom: 5%;
+                            color:  #fff;
+                            background-color:#000 ;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &:hover{
+                                    opacity: 0.5;
+                                    text-decoration: none !important;
+                                    outline: none;
+                                   
+                              
+                            }                       
+                    }                    
+                }
+            }
+            .page-about{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+                
+                .about-content{
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            .page-product{
+                width: 100%;
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e6e6e6;
+                // padding: 50px;
+
+                .product-content{
+                    width: 80%;
+                    width: 80%;
+
+                  
+                    .product-main{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 100px;
+
+                        .product-title{
+                            margin: 50px 0;
+                            width: 100%;
+                            font-size: 20px;
+                            // text-align: inherit;
+                            font-weight: 400;
+                        }
+
+                        .product-card{
+                            width: 25%;
+                            display: flex;
+
+                            .product-img{
+                    
+                                width: 50%;
+
+                                .img{
+                                    width: 700px;
+                                }
+                            }
+                            .product-container{
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 14px;
+                                font-weight: 400;
+                                
+                            }
+                        }
+                    }
+                }
+
+            }
+            .page-chef{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 100px;
+                
+                
+                .chef-content{
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .chef-title{
+                        width: 100%;
+                        font-size: 20px;
+                        // text-align: inherit;
+                        font-weight: 400;
+                        margin: 50px 0;
+
+                    }
+                    .chef-container{
+                        width: 50%;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                    }
+                    .chef-img{
+                        width: 50%;
+                    }
+                }
+            }
+            .page-movie{
+                width: 100%;
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e6e6e6;
+
+                .movie-content{
+                    width: 80%;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 100px;
+
+                    .movie-title{
+                        width: 100%;
+                        font-size: 20px;
+                        // text-align: inherit;
+                        font-weight: 400;
+                        margin: 50px 0;
+                    }
+                    .movie-container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .page-access{
+                width: 100%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .access-content{
+                    width: 80%;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 100px;
+
+                    .access-cardTitle{
+                        width: 100%;
+                        font-size: 20px;
+                        // text-align: inherit;
+                        font-weight: 400;
+                        margin: 50px 0;
+                    }
+                    .access-card{
+                        width: 40%;
+                        flex-wrap: wrap;
+                        .access-img{
+
+                        }
+                        .access-title{
+                            font-size: 20px;                      
+                            font-weight: 400;
+                        }
+                        .access-container{
+
+                        }
+                    }
+                }
+            }
+}
+
