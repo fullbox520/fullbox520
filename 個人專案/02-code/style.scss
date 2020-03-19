@@ -3,7 +3,7 @@ html body {
     margin: 0;
     position: relative;
    
-}
+
 .page-top{
     width: 100%;
     // height: 300vh;
@@ -26,7 +26,7 @@ html body {
             padding: 15px 0;
             background-position: center;
             // background-repeat: no-repeat;
-            background-image: url(./img/header-bg.png);
+            // background-image: url(./img/header-bg.png);
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -145,7 +145,7 @@ html body {
                 align-items: center;              
                 margin-top: 100px;
                 background-color: #e6e6e6;
-                padding: 50px;
+                padding: 50px 0;
                 position: relative;
                 .news-content{
                     width: 80%;
@@ -154,32 +154,36 @@ html body {
 
                   
                     .news-title{
+                        width: 100%;
                         font-size: 20px;
                         // text-align: inherit;
                         font-weight: 400;
                     }
                     .news-container{
                         width: 100%;
-                        height: 100%;
+                        // height: 100%;
                         display: flex;
                         justify-content: center;
                         
                         .news-card{
                             width: 22%;
-                            height: 100%;
+                            // height: 100%;
                             display: flex;
                             flex-direction: column;
 
                             .new-cardImg{
                                 width: 100%;
-                                height: 94px;
-                                margin-bottom:60px;
+                                // height: 94px;
+                                margin-bottom:12px;
+                                img{
+                                    width: 85%;
+                                }
                             }
                             .new-cardTitle{
                                 margin-bottom: 5px;
                                 font-weight: bold;
                                 font-size: 12px;
-                                margin-bottom: 5px;
+                                margin-bottom: 12px;
                             }
                             .news-cardUpdatetime{
                                 color: #646464;
@@ -222,6 +226,9 @@ html body {
                     width: 80%;
                     display: flex;
                     justify-content: space-around;
+                    img{
+                        width: 100%;
+                    }
                 }
             }
             .page-product{
@@ -261,8 +268,10 @@ html body {
                     
                                 width: 50%;
 
-                                .img{
-                                    width: 700px;
+                                img{
+                                    width: 100%;
+
+                                    
                                 }
                             }
                             .product-container{
@@ -304,9 +313,16 @@ html body {
                         display: flex;
                         justify-content: start;
                         align-items: center;
+
+                        img{
+                            width: 100%;
+                        }
                     }
                     .chef-img{
                         width: 50%;
+                        img{
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -365,10 +381,13 @@ html body {
                         margin: 50px 0;
                     }
                     .access-card{
-                        width: 40%;
+                        width: 50%;
                         flex-wrap: wrap;
                         .access-img{
-
+                            width: 40%;
+                            img{
+                                width: 100%;
+                            }
                         }
                         .access-title{
                             font-size: 20px;                      
@@ -380,5 +399,6 @@ html body {
                     }
                 }
             }
-}
+    }
 
+}
