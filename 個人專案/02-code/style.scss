@@ -86,10 +86,16 @@ html body {
                             position: relative;
                             width: calc(100% / 6);
                             text-align: center;
-                        
-                            .nav-item{
-                                
+                            &:hover{
+                                    opacity: 0.6;
                             }
+                        }
+                            // &:nth-child(7){
+                            //     display: none;
+                            // }
+                        
+                            .nav-item {
+                               
                         }
                        
                     }
@@ -147,18 +153,19 @@ html body {
                 background-color: #e6e6e6;
                 padding: 50px 0;
                 position: relative;
-                .news-content{
+                flex-wrap: wrap;
+                
+                .news-title{
                     width: 80%;
-                    height: 70%;
-                    
-
-                  
-                    .news-title{
-                        width: 100%;
-                        font-size: 20px;
-                        // text-align: inherit;
-                        font-weight: 400;
-                    }
+                    font-size: 20px;
+                    // text-align: inherit;
+                    font-weight: 400;
+                }
+                
+                
+                .news-content{
+                    width: 60%;
+                    height: 70%;                  
                     .news-container{
                         width: 100%;
                         // height: 100%;
@@ -176,7 +183,7 @@ html body {
                                 // height: 94px;
                                 margin-bottom:12px;
                                 img{
-                                    width: 85%;
+                                    width: 75%;
                                 }
                             }
                             .new-cardTitle{
@@ -221,6 +228,9 @@ html body {
                 display: flex;
                 justify-content: center;
                 margin-top: 100px;
+                 img{
+                     opacity: 0.8;
+                 }
                 
                 .about-content{
                     width: 80%;
@@ -239,34 +249,44 @@ html body {
                 align-items: center;
                 background-color: #e6e6e6;
                 // padding: 50px;
+                flex-direction: column;
+                .product-title{
+                    margin: 50px 0;
+                    width: 80%;
+                    font-size: 20px;
+                    // text-align: inherit;
+                    font-weight: 400;
+                }
 
                 .product-content{
                     width: 80%;
                     width: 80%;
+                    display: flex;
+                    justify-content: center;
 
                   
+                   
                     .product-main{
-                        width: 100%;
+                        width: 80%;
                         height: 100%;
                         display: flex;
                         flex-wrap: wrap;
                         margin-bottom: 100px;
 
-                        .product-title{
-                            margin: 50px 0;
-                            width: 100%;
-                            font-size: 20px;
-                            // text-align: inherit;
-                            font-weight: 400;
-                        }
-
                         .product-card{
                             width: 25%;
                             display: flex;
 
+                            &:hover{
+                                .product-container{
+                                    opacity: 0.8;
+                                    transition: 1s;
+                                }
+                            }
+
                             .product-img{
                     
-                                width: 50%;
+                                width: 40%;
 
                                 img{
                                     width: 100%;
@@ -275,13 +295,14 @@ html body {
                                 }
                             }
                             .product-container{
-                                width: 50%;
+                                width: 60%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 font-size: 14px;
                                 font-weight: 400;
-                                
+                                opacity: 0;
+                                transition: 1s;
                             }
                         }
                     }
@@ -363,6 +384,14 @@ html body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
+                .access-cardTitle{
+                    width: 80%;
+                    font-size: 20px;
+                    // text-align: inherit;
+                    font-weight: 400;
+                    margin: 50px 0;
+                }
 
                 .access-content{
                     width: 80%;
@@ -372,33 +401,154 @@ html body {
                     justify-content: center;
                     flex-wrap: wrap;
                     margin-bottom: 100px;
+                    
 
-                    .access-cardTitle{
-                        width: 100%;
-                        font-size: 20px;
-                        // text-align: inherit;
-                        font-weight: 400;
-                        margin: 50px 0;
-                    }
+                   
                     .access-card{
                         width: 50%;
+                        display: flex;
+                        justify-content: center;
                         flex-wrap: wrap;
+                        flex-direction: column;
+                        &:hover{
+                            .access-container{
+                                opacity: 1;
+                                transition: 1s;
+                            }
+                        }
+                       
                         .access-img{
                             width: 40%;
+                            margin: auto;
+                           
                             img{
                                 width: 100%;
+                            
                             }
                         }
                         .access-title{
                             font-size: 20px;                      
                             font-weight: 400;
+                            display: flex;
+                            justify-content: center;
                         }
                         .access-container{
-
+                            display: flex;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: 1s;
                         }
                     }
                 }
             }
+            .pagetop_footer{
+                width: 100%;
+                height: 255px;
+                background-color: #e6e6e6;
+                display: flex;
+                justify-content: center;
+                // background-image: url(./img/header-bg.png);
+                background-position: center;
+                background-size: cover;
+                box-sizing: border-box;
+                padding-top: 20px;
+                
+            
+                .footer_container{
+                  width: 100%;
+                  max-width: 1170px;
+                  // padding: 0 15px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  box-sizing: border-box;
+                  padding: 20px;
+                
+                  .footer_logo{
+                    width: 50%;
+                    // height: 157px;
+                    display: flex;
+                    align-items: center;
+                    // margin-left: 20px;
+            
+                    img{
+                      width: 257px;
+                    //   height: 157px;
+                    }
+                  }
+                  .footer_contact{
+                    width: 50%;
+                    height: 157px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    color: #282828;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                   
+                    .social_media{
+                      width: 25%;
+                      display: flex;
+                      justify-content:space-between ;
+                      margin-bottom: 20px;
+                      .fblogo{
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(./img/facebook_0.svg);
+                        background-position: center;
+                        background-size: cover;
+                        transition: 1s;
+                        &:hover{
+                          background-image: url(./img/facebook_1.svg);
+                          transition: 1s;
+                        }
+                      }
+                      .iglogo{
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(./img/instagram_1.svg);
+                        background-position: center;
+                        background-size: cover;
+                        transition: 1s;
+                        &:hover{
+                          background-image: url(./img/instagram_2.svg);
+                          transition: 1s;
+                        }
+                      }
+                    }
+            
+                    
+                    .phpone{
+                      width: 100%;
+                      
+                      .phpone_number{
+                        width: 100%;
+                      }
+                      
+                    }
+                    .business_hour{
+                      width: 100%;
+                    }
+                    .address{
+                      width: 100%;
+                    }
+                  }
+                  .white_line{
+                    width: 100%;
+                    border-top: solid #282828 2px;
+            
+                  }
+                  .footer_copyright{
+                    width: 100%;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #282828;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                }
+              }
     }
 
 }
