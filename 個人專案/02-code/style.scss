@@ -56,7 +56,10 @@ html body {
                 height: 100%;
                 display: flex;
                 // justify-content: space-around;
-                
+                .hamburger{
+                    display: none;
+                }
+                 
 
                 .site-nav{
                     width: 90%;
@@ -90,16 +93,14 @@ html body {
                                     opacity: 0.6;
                             }
                         }
-                            // &:nth-child(7){
-                            //     display: none;
-                            // }
+                           
                         
                             .nav-item {
                                
                         }
                        
                     }
-                     
+                    
                     
                   
                     

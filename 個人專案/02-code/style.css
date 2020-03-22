@@ -69,6 +69,10 @@ html body .page-top .site-heade .header-bottom .container {
   display: flex;
 }
 
+html body .page-top .site-heade .header-bottom .container .hamburger {
+  display: none;
+}
+
 html body .page-top .site-heade .header-bottom .container .site-nav {
   width: 90%;
   height: 100%;
