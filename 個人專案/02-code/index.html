@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    
 </head>
 
 <body>
-    <div class="page-top">
+    <div class="page-top" id="page-top">
         <div class="site-heade">
             <div class="header-top">
                 <div class="container">
@@ -27,26 +28,41 @@
                 <div class="container">
                     <div class="site-nav">
                         <ul>
-                            <li class="nav-item">NEWS</li>
-                            <li class="nav-item">ABOUT US</li>
-                            <li class="nav-item">PRODUCT</li>
-                            <li class="nav-item">CHEF</li>
-                            <li class="nav-item">MOVIE</li>
-                            <li class="nav-item">ACCESS</li>
+                            <a href="#page-news "
+                            
+                            >
+                                <li class="nav-item">NEWS</li>
+                            </a>
+                            <a href="#page-about">
+                                <li class="nav-item">ABOUT</li>
+                            </a>
+                            <a href="#page-product">
+                                <li class="nav-item">PRODUCT</li>
+                            </a>
+                            <a href="#page-chef">
+                                <li class="nav-item">CHEF</li>
+                            </a>
+                            <a href="#page-movie">
+                                <li class="nav-item">MOVIE</li>
+                            </a>
+                            <a href="#page-access">
+                                <li class="nav-item">ACCESS</li>
+                            </a>
+
                         </ul>
                     </div>
                     <div class="hamburger dropdown">
                         <button class=" btn fas fa-bars " type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                            
+
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">NEWS</a>
-                            <a class="dropdown-item" href="#">ABOUT US</a>
-                            <a class="dropdown-item" href="#">PRODUCT</a>
-                            <a class="dropdown-item" href="#">CHEF</a>
-                            <a class="dropdown-item" href="#">MOVIE</a>
-                            <a class="dropdown-item" href="#">ACCESS</a>
+                            <a class="dropdown-item" href="#page-news">NEWS</a>
+                            <a class="dropdown-item" href="#page-about">ABOUT US</a>
+                            <a class="dropdown-item" href="#page-product">PRODUCT</a>
+                            <a class="dropdown-item" href="#page-chef">CHEF</a>
+                            <a class="dropdown-item" href="#page-movie">MOVIE</a>
+                            <a class="dropdown-item" href="#page-access">ACCESS</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +80,7 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
-        <div class="page-news">
+        <div class="page-news" id="page-news">
             <div class="news-title">
                 NEWS
             </div>
@@ -121,24 +137,39 @@
                 </div>
             </div>
         </div>
-        <div class="page-about">
-            <div class="about-content">
-                <div class="about-img">
-                    <img src="./img/about-00.jpg" alt="">
+        <div class="page-about" id="page-about">
+            <div class="about-main">
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="./img/about-00.jpg" alt="">
+                    </div>
                 </div>
                 <div class="about-container">
-                    <img src="./img/about-01.jpg" alt="">
+                    <ul>
+                        <li>Color C’ode 創辦人Kelly於大學時期，因對烘焙產生興趣而</li>
+                        <li>開始製作甜點，並考取了西點烘焙執照，因緣際會下於創業</li>
+                        <li>初期經營Facebook販售蛋糕，大學畢業後一舉邁入跨入實體</li>
+                        <li>店面</li>
+                    </ul>
+                    <ul>
+                        <li>2013年9月 『Color C’ode』一間三坪大小的夢想甜點店正式</li>
+                        <li>誕生。創業半年即受邀進入知名百貨櫃位設點，並獲得國內</li>
+                        <li>外超過二十間媒體專訪 ; 於2016年更獲得網路人氣賣家前30</li>
+                        <li>強的殊榮。</li>
+                    </ul>
                 </div>
-
             </div>
+
+
+
         </div>
-        <div class="page-product">
+        <div class="page-product" id="page-product">
             <div class="product-title">PRODUCT</div>
             <div class="product-content">
 
                 <div class="product-main">
                     <div class="product-card">
-                        <div class="product-img">
+                        <div class="product-img " >
                             <img src="./img/pd-00.jpg" alt="">
                         </div>
                         <div class="product-container">
@@ -241,13 +272,26 @@
                 more
             </div>
         </div>
-        <div class="page-chef">
+        <div class="page-chef" id="page-chef">
             <div class="chef-content">
                 <div class="chef-title">
                     CHEF
                 </div>
                 <div class="chef-container">
-                    <img src="./img/chef-00.png" alt="">
+                    <ul>
+                        <li>甜點主廚洪唯軒Sam擁有乙級西點烘焙</li>
+                        <li>執照，雖為職業軍人退伍不是烘焙本科</li>
+                        <li>出身，仍不斷精進技能，還赴日本、法</li>
+                        <li>國、義大利等地進修，並於每年參與烘</li>
+                        <li>焙比賽，皆拿下優秀的成績表現。</li>
+                    </ul>
+                    <ul>
+                        <li>2019年亞洲盃 台灣代表選拔賽-亞軍</li>
+                        <li>2017年亞洲盃 台灣代表選拔賽-季軍</li>
+                        <li>2016年里昂世界盃甜點台灣選拔賽-第二名</li>
+                        <li>2015年IBA點心大賽台灣選拔賽-銀獎</li>
+                        <li>2014年台灣蛋糕協會-巧克力工藝-亞軍</li>
+                    </ul>
                 </div>
                 <div class="chef-img">
                     <img src="./img/chef-01.png" alt="">
@@ -255,7 +299,7 @@
 
             </div>
         </div>
-        <div class="page-movie">
+        <div class="page-movie" id="page-movie">
             <div class="movie-content">
                 <div class="movie-title">MOVIE</div>
                 <div class="movie-container">
@@ -265,7 +309,7 @@
                 </div>
             </div>
         </div>
-        <div class="page-access">
+        <div class="page-access" id="page-access">
             <div class="access-cardTitle">ACCESS</div>
             <div class="access-content">
 
@@ -343,21 +387,27 @@
                 </div>
             </div>
         </div>
-        <section class=pagetop_footer>
+        <section class="pagetop_footer" id="pagetop_footer">
             <div class="footer_container">
+                <a href="#page-top">
+                    <div class="footer_logo">
+                        <img src="./img/1beb0c3dd3d05ddca6b738d68ed680fa.png" alt="">
+                    </div>
+                </a>
 
-                <div class="footer_logo">
-                    <img src="./img/1beb0c3dd3d05ddca6b738d68ed680fa.png" alt="">
-                </div>
                 <div class="footer_contact">
 
                     <div class="social_media">
-                        <div class="fblogo">
-                            <!-- <img src="./img/fb.svg" alt=""> -->
-                        </div>
-                        <div class="iglogo">
-                            <!-- <img src="./img/insta.svg" alt=""> -->
-                        </div>
+                        <a href="https://www.facebook.com/love.colorcode/">
+                            <div class="fblogo"></div>
+                        </a>
+
+                        <a href="https://www.instagram.com/lovecolorcode/?hl=zh-tw">
+                            <div class="iglogo"></div>
+                        </a>
+
+
+
                     </div>
                     <div class="phpone">
                         <div class="phpone_number">
@@ -391,6 +441,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.esm.bundle.js"></script>
 
     <script src="../package/js/swiper.min.js"></script>
+
 
     <script>
         var swiper = new Swiper('.swiper-container', {
