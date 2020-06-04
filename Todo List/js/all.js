@@ -5,7 +5,7 @@ var app = new Vue({
         todos: [
             {
                 id: '',
-                title: '你好',
+                title: '6:00 起床',
                 completed: false
             }
         ],
