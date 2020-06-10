@@ -638,7 +638,7 @@ html body .page-top .page-movie .movie-content .movie-title {
 }
 
 html body .page-top .page-movie .movie-content .movie-container {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
